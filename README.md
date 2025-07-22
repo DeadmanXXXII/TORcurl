@@ -12,7 +12,7 @@ Step-by-Step Guide
 
 First, create a custom configuration file, typically named curl.conf, with the necessary settings to route traffic through Tor.
 Example:
-
+```
 # curl.conf
 
 # Specify the SOCKS5 proxy (Tor)
@@ -25,7 +25,7 @@ verbose = true
 user-agent = "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)"
 
 Save this file in a directory of your choice (for example, /etc/curl/).
-
+```
 
 ---
 
@@ -34,7 +34,7 @@ Save this file in a directory of your choice (for example, /etc/curl/).
 libcurl does not load a configuration file by default. However, you can set the options directly in your C code to match what you'd put in curl.conf.
 
 Here’s an example C program:
-
+```
 #include <stdio.h>
 #include <curl/curl.h>
 
@@ -76,7 +76,7 @@ int main(void) {
 
     return 0;
 }
-
+```
 
 ---
 
